@@ -14,6 +14,7 @@
 		3DBDBEC220D0684B009B3A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBDBEC020D0684B009B3A75 /* LaunchScreen.storyboard */; };
 		3DBDBECB20D09B64009B3A75 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDBECA20D09B64009B3A75 /* PlayingCard.swift */; };
 		3DBDBECD20D09FEF009B3A75 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDBECC20D09FEF009B3A75 /* PlayingCardDeck.swift */; };
+		3DEFFF5120D0C321001611E6 /* PalyingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFFF5020D0C321001611E6 /* PalyingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3DBDBEC320D0684B009B3A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DBDBECA20D09B64009B3A75 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		3DBDBECC20D09FEF009B3A75 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		3DEFFF5020D0C321001611E6 /* PalyingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalyingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				3DBDBEB920D06847009B3A75 /* ViewController.swift */,
 				3DBDBEBB20D06847009B3A75 /* Main.storyboard */,
 				3DBDBECC20D09FEF009B3A75 /* PlayingCardDeck.swift */,
+				3DEFFF5020D0C321001611E6 /* PalyingCardView.swift */,
 				3DBDBECA20D09B64009B3A75 /* PlayingCard.swift */,
 				3DBDBEBE20D0684B009B3A75 /* Assets.xcassets */,
 				3DBDBEC320D0684B009B3A75 /* Info.plist */,
@@ -152,6 +155,7 @@
 				3DBDBEBA20D06847009B3A75 /* ViewController.swift in Sources */,
 				3DBDBECD20D09FEF009B3A75 /* PlayingCardDeck.swift in Sources */,
 				3DBDBECB20D09B64009B3A75 /* PlayingCard.swift in Sources */,
+				3DEFFF5120D0C321001611E6 /* PalyingCardView.swift in Sources */,
 				3DBDBEB820D06847009B3A75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
