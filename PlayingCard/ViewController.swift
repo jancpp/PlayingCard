@@ -9,18 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var deck = PlayingCardDeck()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // test: prinf 10 random cards in console
-        for _ in 1...10 {
-            if let card = deck.draw() {
-                print("\(card)")
-            }
-        }
-    }
-
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // test: prinf 10 random cards in console
+//        for _ in 1...10 {
+//            if let card = deck.draw() {
+//                print("\(card)")
+//            }
+//        }
+//    }
 }
 
