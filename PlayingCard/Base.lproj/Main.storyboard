@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,23 +20,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Qxz-Qx-RR5" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target" propertyAccessControl="none">
-                                <rect key="frame" x="16" y="44" width="343" height="714"/>
+                                <rect key="frame" x="16" y="136.33333333333331" width="343" height="549.33333333333348"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="Ajg-ZF-7rL"/>
+                                    <constraint firstAttribute="width" secondItem="Qxz-Qx-RR5" secondAttribute="height" multiplier="5:8" id="FgU-zr-Bzp"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70914120660000002" blue="0.33896734909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qxz-Qx-RR5" secondAttribute="bottom" constant="20" id="K78-sx-oAL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxz-Qx-RR5" secondAttribute="trailing" constant="16" id="RMA-rf-eaC"/>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bRn-xi-SBo"/>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wD9-0c-LZo"/>
+                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1mC-Z4-2y1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Qxz-Qx-RR5" secondAttribute="bottom" constant="16" id="K78-sx-oAL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qxz-Qx-RR5" secondAttribute="trailing" constant="16" id="RMA-rf-eaC"/>
+                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bRn-xi-SBo"/>
+                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="iqG-SZ-fYT"/>
+                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wD9-0c-LZo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="140" y="133.00492610837438"/>
         </scene>
     </scenes>
 </document>

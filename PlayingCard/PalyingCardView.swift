@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCardView: UIView
 {
-    var rank: Int = 5 { didSet { setNeedsDisplay(); setNeedsLayout() } } // need didSet almost everytime we have public var; setNeedsDisplay calls draw(); setNeedsLayout calls layoutSubviews()
+    var rank: Int = 11 { didSet { setNeedsDisplay(); setNeedsLayout() } } // need didSet almost everytime we have public var; setNeedsDisplay calls draw(); setNeedsLayout calls layoutSubviews()
     var suit: String = "♥️" { didSet { setNeedsDisplay(); setNeedsLayout() } }
     var isFaceUp: Bool = true { didSet { setNeedsDisplay(); setNeedsLayout() } }
     
@@ -69,6 +69,10 @@ class PlayingCardView: UIView
         roundedRect.addClip()
         UIColor.white.setFill()
         roundedRect.fill()
+        
+        if let faceCardImage = UIImage(named: rankString+suit) {
+            faceCardImage.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize))
+        }
     }
 }
 
