@@ -43,6 +43,12 @@ class PlayingCardView: UIView
         label.isHidden = !isFaceUp
     }
     
+    // for Accessibility->Larger text slider - dynamic font adjustment
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setNeedsDisplay()
+        setNeedsLayout()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
 
