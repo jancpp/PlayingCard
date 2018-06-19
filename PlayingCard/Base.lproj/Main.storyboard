@@ -11,38 +11,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tutorial View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TutorialViewController" customModule="PlayingCard" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Qxz-Qx-RR5" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target" propertyAccessControl="none">
-                                <rect key="frame" x="16" y="136.33333333333331" width="343" height="549.33333333333348"/>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-dh-Kzi" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="16" y="136.66666666666669" width="343" height="548.66666666666652"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="Ajg-ZF-7rL"/>
-                                    <constraint firstAttribute="width" secondItem="Qxz-Qx-RR5" secondAttribute="height" multiplier="5:8" id="FgU-zr-Bzp"/>
+                                    <constraint firstAttribute="width" secondItem="4bg-dh-Kzi" secondAttribute="height" multiplier="5:8" id="GsG-S2-qq7"/>
+                                    <constraint firstAttribute="height" priority="750" constant="800" id="WPn-IY-qxP"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vUS-gb-98i" appends="YES" id="Ycw-hw-bAh"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70914120660000002" blue="0.33896734909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1mC-Z4-2y1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Qxz-Qx-RR5" secondAttribute="bottom" constant="16" id="K78-sx-oAL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qxz-Qx-RR5" secondAttribute="trailing" constant="16" id="RMA-rf-eaC"/>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bRn-xi-SBo"/>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="iqG-SZ-fYT"/>
-                            <constraint firstItem="Qxz-Qx-RR5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wD9-0c-LZo"/>
+                            <constraint firstItem="4bg-dh-Kzi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="33U-dn-BG2"/>
+                            <constraint firstItem="4bg-dh-Kzi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BUN-kP-J0Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4bg-dh-Kzi" secondAttribute="bottom" constant="16" id="Q5c-aA-0jU"/>
+                            <constraint firstItem="4bg-dh-Kzi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bah-3s-gZa"/>
+                            <constraint firstItem="4bg-dh-Kzi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fIy-Ie-2JH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4bg-dh-Kzi" secondAttribute="trailing" constant="16" id="k19-og-ieC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="4bg-dh-Kzi" id="QAs-Nb-Yr4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vUS-gb-98i">
+                    <connections>
+                        <action selector="flipCard:" destination="BYZ-38-t0r" id="N6S-Kz-Efc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="140" y="133.00492610837438"/>
+            <point key="canvasLocation" x="-6070" y="-402"/>
         </scene>
     </scenes>
 </document>
